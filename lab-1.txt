@@ -1,0 +1,76 @@
+1.Basic theory on class and object,definintion and example.
+
+  Class is a user defined datatype which consists of data and functions tied together in a single unit.
+  An objest is an instance or variable of class.
+  Example:
+  -Multiply twon numbers and display then using concept of class
+   #include <iostream>
+
+using namespace std;
+
+class add {
+int a,b;
+public:
+    void set(){
+    cout<<"Enter two numbers";
+    cin>>a>>b;
+    }
+    void display(){
+    cout<<Result is<<a+b;
+    }
+};
+int main(){
+add A1;
+A1.set();
+A1.display();
+return 0;
+
+}
+
+
+2.How to create a class and object??
+
+-Creation of class;
+  class classname{
+    Access specifier    //can be public,private or protected
+    Data members       //variables to be used
+    member functions  //Methods to access data members
+    };                //class name ends with a semicolon 
+ 
+-Creation of objects
+  classname objectname;     
+
+
+3.How to access data members and functions of class using objects??
+  ANS:
+  The data members and member functions of class can be accessed using the dot(‘.’) operator with the object.
+   For example if the name of object is obj and you want to access the member function with the name printName() then you will have to write obj.printName() .
+
+
+4.Analyze the following problem,determine its data members and functions and create a class.
+  a.Find the simple intrest.
+  #include<iostream>
+
+using namespace std;
+
+class Interest{
+float p,t,r;
+public:
+    void set(){
+    cout<<"Enter p,t,r??";
+    cin>>p>>t>>r;
+    }
+    float getresult(){
+    return p*t*r/100;
+    }
+};
+int main(){
+float I;
+Interest obj;
+obj.set();
+I=obj.getresult();
+cout<<The simple interest is<<I;
+
+}
+ 
+  
