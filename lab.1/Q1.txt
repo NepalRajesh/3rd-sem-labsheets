@@ -1,0 +1,14 @@
+CLASS AND OBJECTS
+
+ Class is a user defined datatype which consists of data and functions tied together in a single unit.
+  An objest is an instance or variable of class.
+  -Creation of class;
+  class classname{
+    Access specifier    //can be public,private or protected
+    Data members       //variables to be used
+    member functions  //Methods to access data members
+    };                //class name ends with a semicolon 
+ 
+-Creation of objects
+  classname objectname;     
+
